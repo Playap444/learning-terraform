@@ -25,7 +25,7 @@ resource "azurerm_storage_account" "main_storage" {
   location                          = "eastus"
   account_tier                      = "Standard"
   account_replication_type          = "LRS"
-  infrastructure_encryption_enabled = true
+  infrastructure_encryption_enabled = false
   allow_nested_items_to_be_public   = false
   shared_access_key_enabled         = false
 
