@@ -1,14 +1,14 @@
-# Configure the Azure provider
-terraform {
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "~> 2.90.0"
-    }
-  }
+# # Configure the Azure provider
+# terraform {
+#   required_providers {
+#     azurerm = {
+#       source  = "hashicorp/azurerm"
+#       version = "~> 2.90.0"
+#     }
+#   }
 
-  required_version = ">= 0.14.9"
-}
+#   required_version = ">= 0.14.9"
+# }
 
 provider "azurerm" {
   features {}
@@ -24,5 +24,6 @@ resource "azurerm_storage_account" "main_storage" {
   infrastructure_encryption_enabled = true
   allow_nested_items_to_be_public   = false
   shared_access_key_enabled         = false
+
 
 }
