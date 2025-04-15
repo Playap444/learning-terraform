@@ -27,7 +27,5 @@ resource "azurerm_storage_account" "main_storage" {
   account_replication_type          = "LRS"
   infrastructure_encryption_enabled = false
   allow_nested_items_to_be_public   = false
-  shared_access_key_enabled         = false
-
-
+  shared_access_key_enabled         = true
 }
